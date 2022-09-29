@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #user-entries {
+        font-size: xx-large;
+        border: 2px solid black;
+        text-align: center;
+      }
+      form {
+        background-color: white;
+        padding: 20px;
+        margin: 20px;
+        height: 23em;
+        width: 30em;
+        border-radius: 10px;
+      }
+      label {
+        font-size: x-large;
+        text-align: left;
+        padding: 10px;
+        margin: 30px;
+      }
+      input {
+        float: right;
+        height: 2em;
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+      }
+      table
+      {
+        width: 100%;
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+      tr,th,td
+      {
+        border: 2px solid black;
+      }
+      #submit {
+        background-color: aqua;
+        font-size: x-large;
+        border: none;
+        padding: 10px;
+        margin-left: 35px;
+        border-radius: 5px;
+        font-weight: lighter;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+      }
+      #submit:hover {
+        box-shadow: 2px 8px 10px rgb(74, 222, 128);
+      }
+      #submit:focus {
+        shape-outside: margin-box;
+      }
+      .registration {
+        text-align: center;
+        font-size: xx-large;
+        padding: 10px;
+        position: relative;
+        bottom: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <form action="" id="formuser">
+        <div class="registration">Registration Form</div>
+        <label for="name">Name</label><input type="text" id="name" placeholder="Enter Your Name" required=""><br><br>
+        <label for="email">Email</label><input type="email" id="email" placeholder="Enter Your Email" required=""><br><br>
+        <label for="password">Password</label><input type="password" id="password" placeholder="Enter Password" required=""><br><br>
+        <label for="dob">Date of Birth</label><input type="date" id="dob" style="position: relative; right: 60px; color: blue" onclick="getval()" required=""><br><br>
+        <label for="acceptedterms" style="font-size: large">Accept Terms &amp; Condition</label><input type="checkbox" id="acceptedterms" required="" style="position: relative; right: 40%; bottom: 1%; box-shadow: none"><br><br>
+        <button type="submit" id="submit" s="">Submit</button>
+      </form>
+      <div>
+        <div id="user-entries"></div>
+      </div>
+    </div>
+  </body>
+</html>
